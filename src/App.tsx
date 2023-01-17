@@ -180,10 +180,11 @@ const App: React.FC = () => {
             ) : (
               userData && (<div className="flex flex-col">
               <div className="flex flex-row gap-5 tablet:gap-[41px] desktop:gap-[37px] text-[13px]">
-                <img src={userData.avatar_url} alt="oval pic" className="w-[70px] rounded-full tablet:w-[117px]"/>
+              <a href={userData.html_url}>
+                <img src={userData.avatar_url} alt="oval pic" className="w-[70px] rounded-full tablet:w-[117px]"/></a>
                 <div className="text-left gap-[2px] desktop:grid desktop:grid-rows-2 desktop:grid-flow-col desktop:w-[480px]">
                   <p className="text-base tablet:text-[26px] text-custom-light-black dark:text-white font-bold">{userData.name}</p>
-                  <p className="text-[#0079FF] tablet:text-base desktop:-mt-7">@{userData.login}</p>
+                  <a href={userData.html_url}><p className="text-[#0079FF] tablet:text-base desktop:-mt-7">@{userData.login}</p></a>
                   <p className="text-custom-light-gray dark:text-white tablet:text-[15px] desktop:text-right">Joined {convertDate(userData.created_at)}</p>
                 </div>
               </div>
@@ -217,7 +218,7 @@ const App: React.FC = () => {
                 </div>
                 <div className="flex gap-5">
                   <img src={iconTwitter} alt="iconTwitter" />
-                  <p>{userData.twitter_username}</p>
+                  <a href={`https://twitter.com/${userData.login}`}><p>{userData.twitter_username}</p></a>
                 </div>
                 <div className="flex gap-5">
                   <img src={iconCompany} alt="iconCompany" />

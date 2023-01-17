@@ -12,4 +12,5 @@ export interface UserData {
     company: string;
     blog: string;
     twitter_username: string;
+    html_url: string
   }
