@@ -31,7 +31,7 @@ const Footer = (props: {
                 className="w-[70px] rounded-full tablet:w-[117px]"
               />
             </a>
-            <div className="text-left gap-[2px] desktop:grid desktop:grid-rows-2 desktop:grid-flow-col desktop:w-[480px]">
+            <div className="text-left gap-[2px] desktop:grid desktop:grid-rows-2 desktop:grid-flow-col desktop:h-[110px] desktop:w-[480px]">
               <p className="text-base tablet:text-[26px] text-custom-light-black dark:text-white font-bold">
                 {userData.name}
               </p>

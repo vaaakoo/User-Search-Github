@@ -5,6 +5,7 @@
 @tailwind utilities;
 
 body {
+  height: 100vh;
   font-size: 15px;
   font-weight: 400;
   line-height: 25px;
