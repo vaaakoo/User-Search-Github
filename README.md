@@ -1,3 +1,14 @@
+# Searching Users from Github
+
+[![Link](https://img.shields.io/badge/<SITE>-<LINK>-<blue>)](https://user-search-github.vercel.app/)
+
+### Preview
+![tablet](./src/assets/preview.jpg)
+
+### .gif
+![Mobile](./src/assets/user-Search.gif)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
